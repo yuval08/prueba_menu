@@ -1,0 +1,986 @@
+{
+  "location": {
+    "name": "Restaurante",
+    "description": "El mejor restaurante del mundo",
+    "address": "1222 Mexico St"
+  },
+  "menu": {
+    "name": "Menu",
+    "description": "...",
+    "sections": [
+      {
+        "name": "Menú Brunch",
+        "description": "Disponible SÓLO LOS SABADOS Y DOMINGOS",
+        "menu_items": [
+          {
+            "id": 1,
+            "name": "Desayuno Deluxe",
+            "description": "Huevo Vegano GF Revuelto con vegetales, 2 pancakes del chef, 1 pattie de desayuno estilo chorizo, 1 hojaldra de chia, 1 papa rayada",
+            "photos": [
+              {
+                "name": "Rico Taco",
+                "url": "..."
+              }
+            ],
+            "base_price": 12.5,
+            "modifier_groups": [
+              {
+                "id": 1,
+                "name": "Adiciones",
+                "description": "Que tipo de adiciones quieres?",
+                "min": 0,
+                "max": 1,
+                "required": true,
+                "menu_item_modifiers": [
+                  {
+                    "id": 1,
+                    "name": "Ensalada",
+                    "description": "Nuestra especialidad",
+                    "base_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "name": "Salsa ...",
+                    "description": "Nuestra especialidad ...",
+                    "base_price": 0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "name": "Omelette de la casa",
+            "description": "Omelette Vegano GF con vegetales del día y dos hojaldras de chía",
+            "photos": [
+              {
+                "name": "Rico Taco",
+                "url": "..."
+              }
+            ],
+            "base_price": 10.5,
+            "modifier_groups": [
+              {
+                "id": 1,
+                "name": "Adiciones",
+                "description": "Que tipo de adiciones quieres?",
+                "min": 0,
+                "max": 1,
+                "required": true,
+                "menu_item_modifiers": [
+                  {
+                    "id": 1,
+                    "name": "Ensalada",
+                    "description": "Nuestra especialidad",
+                    "base_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "name": "Salsa ...",
+                    "description": "Nuestra especialidad ...",
+                    "base_price": 0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "name": "El Hulk",
+            "description": "Dúo de tostadas integrales con queso crema vegano de la casa, aguacate, Huevo vegano GF revuelto y tomates rostizados.",
+            "photos": [
+              {
+                "name": "Rico Taco",
+                "url": "..."
+              }
+            ],
+            "base_price": 12,
+            "modifier_groups": [
+              {
+                "id": 1,
+                "name": "Adiciones",
+                "description": "Que tipo de adiciones quieres?",
+                "min": 0,
+                "max": 1,
+                "required": true,
+                "menu_item_modifiers": [
+                  {
+                    "id": 1,
+                    "name": "Ensalada",
+                    "description": "Nuestra especialidad",
+                    "base_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "name": "Salsa ...",
+                    "description": "Nuestra especialidad ...",
+                    "base_price": 0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "name": "Hojaldra Pifia",
+            "description": "Trío de Hojaldras de Chía, sofrito de tomate, cebolla y pimentones, huevo vegano GF revuelto, aguacate y salsa de ajo de la casa",
+            "photos": [
+              {
+                "name": "Rico Taco",
+                "url": "..."
+              }
+            ],
+            "base_price": 13,
+            "modifier_groups": [
+              {
+                "id": 1,
+                "name": "Adiciones",
+                "description": "Que tipo de adiciones quieres?",
+                "min": 0,
+                "max": 1,
+                "required": true,
+                "menu_item_modifiers": [
+                  {
+                    "id": 1,
+                    "name": "Ensalada",
+                    "description": "Nuestra especialidad",
+                    "base_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "name": "Salsa ...",
+                    "description": "Nuestra especialidad ...",
+                    "base_price": 0
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Desayunos",
+        "description": "Todos los dias hasta las 1 pm",
+        "menu_items": [
+          {
+            "id": 4,
+            "name": "Hojaldra Pifia",
+            "description": "Trío de Hojaldras de Chía, sofrito de tomate, cebolla y pimentones, huevo vegano GF revuelto, aguacate y salsa de ajo de la casa",
+            "photos": [
+              {
+                "name": "Rico Taco",
+                "url": "..."
+              }
+            ],
+            "base_price": 13,
+            "modifier_groups": [
+              {
+                "id": 1,
+                "name": "Adiciones",
+                "description": "Que tipo de adiciones quieres?",
+                "min": 0,
+                "max": 1,
+                "required": true,
+                "menu_item_modifiers": [
+                  {
+                    "id": 1,
+                    "name": "Ensalada",
+                    "description": "Nuestra especialidad",
+                    "base_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "name": "Salsa ...",
+                    "description": "Nuestra especialidad ...",
+                    "base_price": 0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 5,
+            "name": "Trio de Panackaes Veganos",
+            "description": "bla bla bla",
+            "photos": [
+              {
+                "name": "Rico Taco",
+                "url": "..."
+              }
+            ],
+            "base_price": 13,
+            "modifier_groups": [
+              {
+                "id": 1,
+                "name": "Adiciones",
+                "description": "Que tipo de adiciones quieres?",
+                "min": 0,
+                "max": 1,
+                "required": true,
+                "menu_item_modifiers": [
+                  {
+                    "id": 1,
+                    "name": "Ensalada",
+                    "description": "Nuestra especialidad",
+                    "base_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "name": "Salsa ...",
+                    "description": "Nuestra especialidad ...",
+                    "base_price": 0
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Entradas",
+        "menu_items": [
+          {
+            "id": 1,
+            "name": "Desayuno Deluxe",
+            "description": "Huevo Vegano GF Revuelto con vegetales, 2 pancakes del chef, 1 pattie de desayuno estilo chorizo, 1 hojaldra de chia, 1 papa rayada",
+            "photos": [
+              {
+                "name": "Rico Taco",
+                "url": "..."
+              }
+            ],
+            "base_price": 12.5,
+            "modifier_groups": [
+              {
+                "id": 1,
+                "name": "Adiciones",
+                "description": "Que tipo de adiciones quieres?",
+                "min": 0,
+                "max": 1,
+                "required": true,
+                "menu_item_modifiers": [
+                  {
+                    "id": 1,
+                    "name": "Ensalada",
+                    "description": "Nuestra especialidad",
+                    "base_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "name": "Salsa ...",
+                    "description": "Nuestra especialidad ...",
+                    "base_price": 0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "name": "Omelette de la casa",
+            "description": "Omelette Vegano GF con vegetales del día y dos hojaldras de chía",
+            "photos": [
+              {
+                "name": "Rico Taco",
+                "url": "..."
+              }
+            ],
+            "base_price": 10.5,
+            "modifier_groups": [
+              {
+                "id": 1,
+                "name": "Adiciones",
+                "description": "Que tipo de adiciones quieres?",
+                "min": 0,
+                "max": 1,
+                "required": true,
+                "menu_item_modifiers": [
+                  {
+                    "id": 1,
+                    "name": "Ensalada",
+                    "description": "Nuestra especialidad",
+                    "base_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "name": "Salsa ...",
+                    "description": "Nuestra especialidad ...",
+                    "base_price": 0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "name": "El Hulk",
+            "description": "Dúo de tostadas integrales con queso crema vegano de la casa, aguacate, Huevo vegano GF revuelto y tomates rostizados.",
+            "photos": [
+              {
+                "name": "Rico Taco",
+                "url": "..."
+              }
+            ],
+            "base_price": 12,
+            "modifier_groups": [
+              {
+                "id": 1,
+                "name": "Adiciones",
+                "description": "Que tipo de adiciones quieres?",
+                "min": 0,
+                "max": 1,
+                "required": true,
+                "menu_item_modifiers": [
+                  {
+                    "id": 1,
+                    "name": "Ensalada",
+                    "description": "Nuestra especialidad",
+                    "base_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "name": "Salsa ...",
+                    "description": "Nuestra especialidad ...",
+                    "base_price": 0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "name": "Hojaldra Pifia",
+            "description": "Trío de Hojaldras de Chía, sofrito de tomate, cebolla y pimentones, huevo vegano GF revuelto, aguacate y salsa de ajo de la casa",
+            "photos": [
+              {
+                "name": "Rico Taco",
+                "url": "..."
+              }
+            ],
+            "base_price": 13,
+            "modifier_groups": [
+              {
+                "id": 1,
+                "name": "Adiciones",
+                "description": "Que tipo de adiciones quieres?",
+                "min": 0,
+                "max": 1,
+                "required": true,
+                "menu_item_modifiers": [
+                  {
+                    "id": 1,
+                    "name": "Ensalada",
+                    "description": "Nuestra especialidad",
+                    "base_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "name": "Salsa ...",
+                    "description": "Nuestra especialidad ...",
+                    "base_price": 0
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sándwiches y burger",
+        "menu_items": [
+          {
+            "id": 1,
+            "name": "Desayuno Deluxe",
+            "description": "Huevo Vegano GF Revuelto con vegetales, 2 pancakes del chef, 1 pattie de desayuno estilo chorizo, 1 hojaldra de chia, 1 papa rayada",
+            "photos": [
+              {
+                "name": "Rico Taco",
+                "url": "..."
+              }
+            ],
+            "base_price": 12.5,
+            "modifier_groups": [
+              {
+                "id": 1,
+                "name": "Adiciones",
+                "description": "Que tipo de adiciones quieres?",
+                "min": 0,
+                "max": 1,
+                "required": true,
+                "menu_item_modifiers": [
+                  {
+                    "id": 1,
+                    "name": "Ensalada",
+                    "description": "Nuestra especialidad",
+                    "base_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "name": "Salsa ...",
+                    "description": "Nuestra especialidad ...",
+                    "base_price": 0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "name": "Omelette de la casa",
+            "description": "Omelette Vegano GF con vegetales del día y dos hojaldras de chía",
+            "photos": [
+              {
+                "name": "Rico Taco",
+                "url": "..."
+              }
+            ],
+            "base_price": 10.5,
+            "modifier_groups": [
+              {
+                "id": 1,
+                "name": "Adiciones",
+                "description": "Que tipo de adiciones quieres?",
+                "min": 0,
+                "max": 1,
+                "required": true,
+                "menu_item_modifiers": [
+                  {
+                    "id": 1,
+                    "name": "Ensalada",
+                    "description": "Nuestra especialidad",
+                    "base_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "name": "Salsa ...",
+                    "description": "Nuestra especialidad ...",
+                    "base_price": 0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "name": "El Hulk",
+            "description": "Dúo de tostadas integrales con queso crema vegano de la casa, aguacate, Huevo vegano GF revuelto y tomates rostizados.",
+            "photos": [
+              {
+                "name": "Rico Taco",
+                "url": "..."
+              }
+            ],
+            "base_price": 12,
+            "modifier_groups": [
+              {
+                "id": 1,
+                "name": "Adiciones",
+                "description": "Que tipo de adiciones quieres?",
+                "min": 0,
+                "max": 1,
+                "required": true,
+                "menu_item_modifiers": [
+                  {
+                    "id": 1,
+                    "name": "Ensalada",
+                    "description": "Nuestra especialidad",
+                    "base_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "name": "Salsa ...",
+                    "description": "Nuestra especialidad ...",
+                    "base_price": 0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "name": "Hojaldra Pifia",
+            "description": "Trío de Hojaldras de Chía, sofrito de tomate, cebolla y pimentones, huevo vegano GF revuelto, aguacate y salsa de ajo de la casa",
+            "photos": [
+              {
+                "name": "Rico Taco",
+                "url": "..."
+              }
+            ],
+            "base_price": 13,
+            "modifier_groups": [
+              {
+                "id": 1,
+                "name": "Adiciones",
+                "description": "Que tipo de adiciones quieres?",
+                "min": 0,
+                "max": 1,
+                "required": true,
+                "menu_item_modifiers": [
+                  {
+                    "id": 1,
+                    "name": "Ensalada",
+                    "description": "Nuestra especialidad",
+                    "base_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "name": "Salsa ...",
+                    "description": "Nuestra especialidad ...",
+                    "base_price": 0
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Snacks",
+        "menu_items": [
+          {
+            "id": 1,
+            "name": "Desayuno Deluxe",
+            "description": "Huevo Vegano GF Revuelto con vegetales, 2 pancakes del chef, 1 pattie de desayuno estilo chorizo, 1 hojaldra de chia, 1 papa rayada",
+            "photos": [
+              {
+                "name": "Rico Taco",
+                "url": "..."
+              }
+            ],
+            "base_price": 12.5,
+            "modifier_groups": [
+              {
+                "id": 1,
+                "name": "Adiciones",
+                "description": "Que tipo de adiciones quieres?",
+                "min": 0,
+                "max": 1,
+                "required": true,
+                "menu_item_modifiers": [
+                  {
+                    "id": 1,
+                    "name": "Ensalada",
+                    "description": "Nuestra especialidad",
+                    "base_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "name": "Salsa ...",
+                    "description": "Nuestra especialidad ...",
+                    "base_price": 0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "name": "Omelette de la casa",
+            "description": "Omelette Vegano GF con vegetales del día y dos hojaldras de chía",
+            "photos": [
+              {
+                "name": "Rico Taco",
+                "url": "..."
+              }
+            ],
+            "base_price": 10.5,
+            "modifier_groups": [
+              {
+                "id": 1,
+                "name": "Adiciones",
+                "description": "Que tipo de adiciones quieres?",
+                "min": 0,
+                "max": 1,
+                "required": true,
+                "menu_item_modifiers": [
+                  {
+                    "id": 1,
+                    "name": "Ensalada",
+                    "description": "Nuestra especialidad",
+                    "base_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "name": "Salsa ...",
+                    "description": "Nuestra especialidad ...",
+                    "base_price": 0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "name": "El Hulk",
+            "description": "Dúo de tostadas integrales con queso crema vegano de la casa, aguacate, Huevo vegano GF revuelto y tomates rostizados.",
+            "photos": [
+              {
+                "name": "Rico Taco",
+                "url": "..."
+              }
+            ],
+            "base_price": 12,
+            "modifier_groups": [
+              {
+                "id": 1,
+                "name": "Adiciones",
+                "description": "Que tipo de adiciones quieres?",
+                "min": 0,
+                "max": 1,
+                "required": true,
+                "menu_item_modifiers": [
+                  {
+                    "id": 1,
+                    "name": "Ensalada",
+                    "description": "Nuestra especialidad",
+                    "base_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "name": "Salsa ...",
+                    "description": "Nuestra especialidad ...",
+                    "base_price": 0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "name": "Hojaldra Pifia",
+            "description": "Trío de Hojaldras de Chía, sofrito de tomate, cebolla y pimentones, huevo vegano GF revuelto, aguacate y salsa de ajo de la casa",
+            "photos": [
+              {
+                "name": "Rico Taco",
+                "url": "..."
+              }
+            ],
+            "base_price": 13,
+            "modifier_groups": [
+              {
+                "id": 1,
+                "name": "Adiciones",
+                "description": "Que tipo de adiciones quieres?",
+                "min": 0,
+                "max": 1,
+                "required": true,
+                "menu_item_modifiers": [
+                  {
+                    "id": 1,
+                    "name": "Ensalada",
+                    "description": "Nuestra especialidad",
+                    "base_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "name": "Salsa ...",
+                    "description": "Nuestra especialidad ...",
+                    "base_price": 0
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Bebidas",
+        "menu_items": [
+          {
+            "id": 1,
+            "name": "Desayuno Deluxe",
+            "description": "Huevo Vegano GF Revuelto con vegetales, 2 pancakes del chef, 1 pattie de desayuno estilo chorizo, 1 hojaldra de chia, 1 papa rayada",
+            "photos": [
+              {
+                "name": "Rico Taco",
+                "url": "..."
+              }
+            ],
+            "base_price": 12.5,
+            "modifier_groups": [
+              {
+                "id": 1,
+                "name": "Adiciones",
+                "description": "Que tipo de adiciones quieres?",
+                "min": 0,
+                "max": 1,
+                "required": true,
+                "menu_item_modifiers": [
+                  {
+                    "id": 1,
+                    "name": "Ensalada",
+                    "description": "Nuestra especialidad",
+                    "base_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "name": "Salsa ...",
+                    "description": "Nuestra especialidad ...",
+                    "base_price": 0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "name": "Omelette de la casa",
+            "description": "Omelette Vegano GF con vegetales del día y dos hojaldras de chía",
+            "photos": [
+              {
+                "name": "Rico Taco",
+                "url": "..."
+              }
+            ],
+            "base_price": 10.5,
+            "modifier_groups": [
+              {
+                "id": 1,
+                "name": "Adiciones",
+                "description": "Que tipo de adiciones quieres?",
+                "min": 0,
+                "max": 1,
+                "required": true,
+                "menu_item_modifiers": [
+                  {
+                    "id": 1,
+                    "name": "Ensalada",
+                    "description": "Nuestra especialidad",
+                    "base_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "name": "Salsa ...",
+                    "description": "Nuestra especialidad ...",
+                    "base_price": 0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "name": "El Hulk",
+            "description": "Dúo de tostadas integrales con queso crema vegano de la casa, aguacate, Huevo vegano GF revuelto y tomates rostizados.",
+            "photos": [
+              {
+                "name": "Rico Taco",
+                "url": "..."
+              }
+            ],
+            "base_price": 12,
+            "modifier_groups": [
+              {
+                "id": 1,
+                "name": "Adiciones",
+                "description": "Que tipo de adiciones quieres?",
+                "min": 0,
+                "max": 1,
+                "required": true,
+                "menu_item_modifiers": [
+                  {
+                    "id": 1,
+                    "name": "Ensalada",
+                    "description": "Nuestra especialidad",
+                    "base_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "name": "Salsa ...",
+                    "description": "Nuestra especialidad ...",
+                    "base_price": 0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "name": "Hojaldra Pifia",
+            "description": "Trío de Hojaldras de Chía, sofrito de tomate, cebolla y pimentones, huevo vegano GF revuelto, aguacate y salsa de ajo de la casa",
+            "photos": [
+              {
+                "name": "Rico Taco",
+                "url": "..."
+              }
+            ],
+            "base_price": 13,
+            "modifier_groups": [
+              {
+                "id": 1,
+                "name": "Adiciones",
+                "description": "Que tipo de adiciones quieres?",
+                "min": 0,
+                "max": 1,
+                "required": true,
+                "menu_item_modifiers": [
+                  {
+                    "id": 1,
+                    "name": "Ensalada",
+                    "description": "Nuestra especialidad",
+                    "base_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "name": "Salsa ...",
+                    "description": "Nuestra especialidad ...",
+                    "base_price": 0
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Postres",
+        "menu_items": [
+          {
+            "id": 1,
+            "name": "Desayuno Deluxe",
+            "description": "Huevo Vegano GF Revuelto con vegetales, 2 pancakes del chef, 1 pattie de desayuno estilo chorizo, 1 hojaldra de chia, 1 papa rayada",
+            "photos": [
+              {
+                "name": "Rico Taco",
+                "url": "..."
+              }
+            ],
+            "base_price": 12.5,
+            "modifier_groups": [
+              {
+                "id": 1,
+                "name": "Adiciones",
+                "description": "Que tipo de adiciones quieres?",
+                "min": 0,
+                "max": 1,
+                "required": true,
+                "menu_item_modifiers": [
+                  {
+                    "id": 1,
+                    "name": "Ensalada",
+                    "description": "Nuestra especialidad",
+                    "base_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "name": "Salsa ...",
+                    "description": "Nuestra especialidad ...",
+                    "base_price": 0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "name": "Omelette de la casa",
+            "description": "Omelette Vegano GF con vegetales del día y dos hojaldras de chía",
+            "photos": [
+              {
+                "name": "Rico Taco",
+                "url": "..."
+              }
+            ],
+            "base_price": 10.5,
+            "modifier_groups": [
+              {
+                "id": 1,
+                "name": "Adiciones",
+                "description": "Que tipo de adiciones quieres?",
+                "min": 0,
+                "max": 1,
+                "required": true,
+                "menu_item_modifiers": [
+                  {
+                    "id": 1,
+                    "name": "Ensalada",
+                    "description": "Nuestra especialidad",
+                    "base_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "name": "Salsa ...",
+                    "description": "Nuestra especialidad ...",
+                    "base_price": 0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "name": "El Hulk",
+            "description": "Dúo de tostadas integrales con queso crema vegano de la casa, aguacate, Huevo vegano GF revuelto y tomates rostizados.",
+            "photos": [
+              {
+                "name": "Rico Taco",
+                "url": "..."
+              }
+            ],
+            "base_price": 12,
+            "modifier_groups": [
+              {
+                "id": 1,
+                "name": "Adiciones",
+                "description": "Que tipo de adiciones quieres?",
+                "min": 0,
+                "max": 1,
+                "required": true,
+                "menu_item_modifiers": [
+                  {
+                    "id": 1,
+                    "name": "Ensalada",
+                    "description": "Nuestra especialidad",
+                    "base_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "name": "Salsa ...",
+                    "description": "Nuestra especialidad ...",
+                    "base_price": 0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "name": "Hojaldra Pifia",
+            "description": "Trío de Hojaldras de Chía, sofrito de tomate, cebolla y pimentones, huevo vegano GF revuelto, aguacate y salsa de ajo de la casa",
+            "photos": [
+              {
+                "name": "Rico Taco",
+                "url": "..."
+              }
+            ],
+            "base_price": 13,
+            "modifier_groups": [
+              {
+                "id": 1,
+                "name": "Adiciones",
+                "description": "Que tipo de adiciones quieres?",
+                "min": 0,
+                "max": 1,
+                "required": true,
+                "menu_item_modifiers": [
+                  {
+                    "id": 1,
+                    "name": "Ensalada",
+                    "description": "Nuestra especialidad",
+                    "base_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "name": "Salsa ...",
+                    "description": "Nuestra especialidad ...",
+                    "base_price": 0
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

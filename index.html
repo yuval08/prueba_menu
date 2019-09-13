@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="main.dart.js" type="text/javascript"></script>
+    <title>Restaurant Menu</title>
+</head>
+<body class="">
+<div id="loading" class="visible">
+    <div class="center-align">Loading...</div>
+</div>
+<div id="content">
+    <section id="home-section">
+        <h1 class="title">How can we help you?</h1>
+        <a class="button" href="#order-more">Order More</a>
+        <a class="button">Call Waiter</a>
+        <a class="button">Refill Water</a>
+        <a class="button">Checkout</a>
+    </section>
+
+    <section id="search-section" class="hide-right">
+        <a href="#home">Home</a>
+        <h2 class="subtitle">What would you like to</h2>
+        <h1 class="title">eat</h1>
+        <div class="field">
+            <div class="control has-icons-left has-icons-right">
+                <input class="input" type="text" placeholder="Search your favorite foods" value="">
+                <span class="icon is-small is-left"><i class="fas fa-search"></i></span>
+                <span class="icon is-small is-right"><i class="fas fa-sliders-h"></i></span>
+            </div>
+        </div>
+        <h2 class="subtitle">Categories</h2>
+        <div id="categories">
+            <a class="category" href="#category/recommendations">
+                <img src="img/salad.png">
+                <h4>Recommendations</h4>
+            </a>
+            <a class="category" href="#category/appetizers">
+                <img src="img/salad.png">
+                <h4>Appetizers</h4>
+            </a>
+            <a class="category" href="#category/main-course">
+                <img src="img/salad.png">
+                <h4>Main Course</h4>
+            </a>
+            <a class="category" href="#category/others">
+                <img src="img/salad.png">
+                <h4>Other</h4>
+            </a>
+        </div>
+    </section>
+
+    <section id="category-section" class="hide-right">
+        <a href="#home">Home</a> | <a href="#order-more">Order More</a>
+        <h1 class="title">APPETIZER</h1>
+        <div class="field">
+            <div class="control has-icons-left has-icons-right">
+                <input class="input" type="text" placeholder="Search your favorite foods" value="">
+                <span class="icon is-small is-left"><i class="fas fa-search"></i></span>
+                <span class="icon is-small is-right"><i class="fas fa-sliders-h"></i></span>
+            </div>
+        </div>
+        <a class="food" href="#food/recommendations">
+            <img src="img/salad.png">
+            <h3 class="title is-3">Sald Halumi</h3>
+            <span>Lorem ipsum dolor sit amet consecterur adipoiscing elit...</span>
+        </a>
+        <a class="food" href="#food/appetizers">
+            <img src="img/salad.png">
+            <h3 class="title is-3">Sald Halumi</h3>
+            <span>Lorem ipsum dolor sit amet consecterur adipoiscing elit...</span>
+        </a>
+        <a class="food" href="#food/main-course">
+            <img src="img/salad.png">
+            <h3 class="title is-3">Sald Halumi</h3>
+            <span>Lorem ipsum dolor sit amet consecterur adipoiscing elit...</span>
+        </a>
+        <a class="food" href="#food/others">
+            <img src="img/salad.png">
+            <h3 class="title is-3">Sald Halumi</h3>
+            <span>Lorem ipsum dolor sit amet consecterur adipoiscing elit...</span>
+        </a>
+    </section>
+
+    <section id="food-section" class="hide-right">
+        <!--#todo food section -->
+    </section>
+
+    <section id="my-order" class="hide-right">
+        <!--#todo food section -->
+    </section>
+
+    <section id="checkout" class="hide-right">
+        <!--#todo food section -->
+    </section>
+</div>
+</body>
+</html>
