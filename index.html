@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bulma.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="main.dart.js" type="text/javascript"></script>
     <title>Restaurant Menu</title>
 </head>
 <body class="">
@@ -16,14 +15,27 @@
 <div id="content">
     <section id="home-section">
         <h1 class="title">How can we help you?</h1>
-        <a class="button" href="#order-more">Order More</a>
-        <a class="button">Call Waiter</a>
-        <a class="button">Refill Water</a>
-        <a class="button">Checkout</a>
+        <div>
+            <a class="button" href="#my-order"> <i class="fas fa-shopping-cart"></i> My Order</a>
+        </div>
+        <div>
+            <a class="button" href="#order-more"><i class="fas fa-cart-plus"></i>Order More</a>
+        </div>
+        <div>
+            <a class="button" id="btn-call-waiter"><i class="fas fa-walking"></i>Call Waiter</a>
+        </div>
+        <div>
+            <a class="button" id="btn-refill-water"><i class="fas fa-wine-bottle"></i>Refill Water</a>
+        </div>
+        <div>
+            <a class="button" href="#checkout"><i class="fas fa-credit-card"></i>Checkout</a>
+        </div>
     </section>
 
-    <section id="search-section" class="hide-right">
-        <a href="#home">Home</a>
+    <section id="order-more-section" class="hide-right">
+        <nav>
+            <a href="#home">Home</a> | <a href="#my-order">My Order</a>
+        </nav>
         <h2 class="subtitle">What would you like to</h2>
         <h1 class="title">eat</h1>
         <div class="field">
@@ -55,7 +67,9 @@
     </section>
 
     <section id="category-section" class="hide-right">
-        <a href="#home">Home</a> | <a href="#order-more">Order More</a>
+        <nav>
+            <a href="#home">Home</a> | <a href="#order-more">Order More</a>
+        </nav>
         <h1 class="title">APPETIZER</h1>
         <div class="field">
             <div class="control has-icons-left has-icons-right">
@@ -64,39 +78,150 @@
                 <span class="icon is-small is-right"><i class="fas fa-sliders-h"></i></span>
             </div>
         </div>
-        <a class="food" href="#food/recommendations">
-            <img src="img/salad.png">
+        <a class="food" href="#food/appetizer/salad_halumi">
+            <img src="img/big_salad.jpg">
             <h3 class="title is-3">Sald Halumi</h3>
             <span>Lorem ipsum dolor sit amet consecterur adipoiscing elit...</span>
         </a>
-        <a class="food" href="#food/appetizers">
-            <img src="img/salad.png">
+        <a class="food" href="#food/appetizer/salad_halumi">
+            <img src="img/big_salad.jpg">
             <h3 class="title is-3">Sald Halumi</h3>
             <span>Lorem ipsum dolor sit amet consecterur adipoiscing elit...</span>
         </a>
-        <a class="food" href="#food/main-course">
-            <img src="img/salad.png">
+        <a class="food" href="#food/appetizer/salad_halumi">
+            <img src="img/big_salad.jpg">
             <h3 class="title is-3">Sald Halumi</h3>
             <span>Lorem ipsum dolor sit amet consecterur adipoiscing elit...</span>
         </a>
-        <a class="food" href="#food/others">
-            <img src="img/salad.png">
+        <a class="food" href="#food/appetizer/salad_halumi">
+            <img src="img/big_salad.jpg">
             <h3 class="title is-3">Sald Halumi</h3>
             <span>Lorem ipsum dolor sit amet consecterur adipoiscing elit...</span>
         </a>
     </section>
 
     <section id="food-section" class="hide-right">
-        <!--#todo food section -->
+        <nav>
+            <a href="#home">Home</a> | <a href="#order-more">Order More</a> | <a href="#category/appetizers">Appetizers</a>
+        </nav>
+        <div id="food-section-header">
+            <span class="helper"></span>
+            <img src="img/big_salad.jpg">
+            <a id="food-add-to-order" class="button is-rounded">Add to Order <i class="fas fa-cart-plus"></i></a>
+        </div>
+        <div id="food-section-title">
+            <h2 class="title is-3">Salad Halumi
+                <span class="food-section-price subtitle is-4">$7.99</span>
+            </h2>
+            <span>Lorem ipsum dolor sit amet consecterur adipoiscing elit...</span>
+        </div>
+        <div id="food-section-options">
+            <h4 class="title is-4">Options</h4>
+            <ul>
+                <li><input type="checkbox" id="food-option-1" checked><label for="food-option-1">Extra Cheese</label>
+                    <span class="food-section-price subtitle is-5" style="right: 30px;">$7.99</span>
+                </li>
+                <li><input type="checkbox" id="food-option-2"><label for="food-option-2">Extra Cheese</label>
+                    <span class="food-section-price subtitle is-5" style="right: 30px;">$7.99</span>
+                </li>
+                <li><input type="checkbox" id="food-option-3"><label for="food-option-3">Extra Cheese</label>
+                    <span class="food-section-price subtitle is-5" style="right: 30px;">$7.99</span>
+                </li>
+            </ul>
+            <h4 class="title is-4">Special Instructions</h4>
+            <div class="field">
+                <div class="control">
+                    <textarea class="textarea is-small" placeholder="Enter any special instructions you have"></textarea>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="my-order" class="hide-right">
-        <!--#todo food section -->
+    <section id="my-order-section" class="hide-right">
+        <nav>
+            <a href="#home">Home</a>
+        </nav>
+        <h1 class="title">My Order</h1>
+        <div id="my-order-items">
+            <div class="my-order-item">
+                <img src="img/salad.png">
+                <div>
+                    <h4 class="title is-6">Sala Halumi</h4>
+                    <ul>
+                        <li>
+                            <span class="subtitle is-7">Extra Cheese</span>
+                        </li>
+                        <li>
+                            <span class="subtitle is-7">Extra Cheese</span>
+                        </li>
+                    </ul>
+                    <div class="my-order-item-buttons">
+                        <a class="my-order-item-mod-btn"><i class="fas fa-minus"></i></a>
+                        <span>3</span>
+                        <a class="my-order-item-mod-btn"><i class="fas fa-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="my-order-item">
+                <img src="img/salad.png">
+                <div>
+                    <h4 class="title is-6">Sala Halumi</h4>
+                    <ul>
+                        <li>
+                            <span class="subtitle is-7">Extra Cheese</span>
+                        </li>
+                        <li>
+                            <span class="subtitle is-7">Extra Cheese</span>
+                        </li>
+                    </ul>
+                    <div class="my-order-item-buttons">
+                        <a class="my-order-item-mod-btn"><i class="fas fa-minus"></i></a>
+                        <span>3</span>
+                        <a class="my-order-item-mod-btn"><i class="fas fa-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="my-order-item">
+                <img src="img/salad.png">
+                <div>
+                    <h4 class="title is-6">Sala Halumi</h4>
+                    <ul>
+                        <li>
+                            <span class="subtitle is-7">Extra Cheese</span>
+                        </li>
+                        <li>
+                            <span class="subtitle is-7">Extra Cheese</span>
+                        </li>
+                    </ul>
+                    <div class="my-order-item-buttons">
+                        <a class="my-order-item-mod-btn"><i class="fas fa-minus"></i></a>
+                        <span>3</span>
+                        <a class="my-order-item-mod-btn"><i class="fas fa-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="height: 40px;"></div>
+        <div id="my-order-buttons">
+            <a class="button is-black is-pulled-left" href="#order-more">Add more items</a>
+            <a class="button is-success is-pulled-right">Order Ready</a>
+        </div>
     </section>
 
-    <section id="checkout" class="hide-right">
-        <!--#todo food section -->
+    <section id="checkout-section" class="hide-right">
+        <nav>
+            <a href="#home">Home</a>
+        </nav>
+        <h2 class="subtitle">select payment</h2>
+        <h1 class="title">method</h1>
+        <ul>
+            <li><input type="radio" name="checkout-option" id="checkout-option-1" checked><label for="checkout-option-1">Cash</label>
+            </li>
+            <li><input type="radio" name="checkout-option" id="checkout-option-2"><label for="checkout-option-2">Credit / Debit Card</label>
+            </li>
+        </ul>
     </section>
 </div>
+<script src="main.dart.js" type="text/javascript"></script>
 </body>
 </html>
